@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
 from .loaders import *
-from .api import NamedAPIResource, APIMetadata, APIResourceList
+from .interface import APIResource, APIMetadata, APIResourceList, SpriteResource
 
-__all__ = ['NamedAPIResource',
+__all__ = ['APIResource',
            'APIMetadata',
            'APIResourceList',
+           'SpriteResource',
            'ability',
            'berry',
            'berry_firmness',
@@ -48,11 +49,9 @@ __all__ = ['NamedAPIResource',
            'pokemon_habitat',
            'pokemon_shape',
            'pokemon_species',
-           'pokemon_sprite'
            'region',
            'stat',
            'super_contest_effect',
            'type_',
            'version',
-           'version_group'
-           ]
+           'version_group']
